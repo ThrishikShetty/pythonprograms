@@ -18,4 +18,4 @@ def romanToDec(romStr):
 
 
 romanStr = input("Enter a Roman Number : ")
-print(roman2Dec(romanStr))
+print(romanToDec(romanStr))
