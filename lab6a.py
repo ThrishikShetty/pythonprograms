@@ -1,4 +1,5 @@
-inputFile = input("enter the valid file name ")
+# lab6afile.txt
+inputFile = input("enter the valid file name ")   
 
 N= int(input("Enter N value "))
 
