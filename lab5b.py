@@ -2,11 +2,11 @@ import re
 
 
 def find_phone_numbers_and_emails(file_path):
-    with open(file_path, 'r') as file:
+        file=open(file_path, 'r') 
         text = file.read()
 
         phone_pattern = r'\+\d{12}'
-        email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b'
+        email_pattern = r'\b[A-Za-z0-9]+\@[A-Za-z0-9]+\.[A-Z|a-z]{2,7}\b'
 
         phone_numbers = re.findall(phone_pattern, text)
         email_addresses = re.findall(email_pattern, text)
